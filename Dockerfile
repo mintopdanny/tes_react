@@ -4,7 +4,6 @@ COPY package.json ./
 RUN npm install
 COPY . .
 RUN npm run build
-WORKDIR /app/src
-CMD [ "node","App.js" ]
+Run npm start
 
-EXPOSE 8080
+EXPOSE 3000
