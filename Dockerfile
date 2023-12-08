@@ -4,7 +4,7 @@ COPY package.json ./
 RUN npm install
 COPY . .
 RUN npm run build
-WORKDIR cd /app/src
+WORKDIR /app/src
 CMD [ "node","App.js" ]
 
 EXPOSE 8080
